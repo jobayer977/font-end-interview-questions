@@ -1,7 +1,5 @@
-# Frequently Asked Typescript Interview Questions 
+# Frequently Asked Front End Questions 
  ### Resources 
-- [Typescript Documentations](https://www.typescriptlang.org/) 
-- [Fullstack Cafe](https://www.fullstack.cafe) 
  
 
  ## Table of Contents
