@@ -7,16 +7,12 @@ import path from 'path'
 ;
 
 (async function () {
-	const title = 'Frequently Asked Typescript Interview Questions'
+	const title = 'Frequently Asked Front End Questions'
 	const resources = [
-		{
-			title: 'Typescript Documentations',
-			url: 'https://www.typescriptlang.org/',
-		},
-		{
-			title: 'Fullstack Cafe',
-			url: 'https://www.fullstack.cafe',
-		},
+		// {
+		// 	title: 'Typescript Documentations',
+		// 	url: 'https://www.typescriptlang.org/',
+		// },
 	]
 	const fromDir = (startPath, filter, callback) => {
 		if (!existsSync(startPath)) {
