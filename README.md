@@ -5,7 +5,7 @@
  ## Table of Contents
 
 - [1 What does client-side mean?](#what-does-client-side-mean)
-- [2 what is node.js](#what-is-nodejs)
+- [2 What is node.js](#what-is-nodejs)
 - [3 What does server side mean?](#what-does-server-side-mean)
 - [4 What does headless mean in software?](#what-does-headless-mean-in-software)
 - [5 How do I use headless browser?](#how-do-i-use-headless-browser)
@@ -22,7 +22,7 @@ In web development, 'client side' refers to everything in a web application that
 
 Markup languages like HTML and CSS are interpreted by the browser on the client side.
 
-2. ### what is node.js
+2. ### What is node.js
 
 Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
 
