@@ -1,4 +1,4 @@
 ---
 title: xxxxxxx
-source: https://www.typescriptlang.org/
+source: https://developer.mozilla.org/en-US/
 ---

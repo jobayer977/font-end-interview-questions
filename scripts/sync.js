@@ -11,7 +11,7 @@ import path from 'path'
 	const resources = [
 		// {
 		// 	title: 'Typescript Documentations',
-		// 	url: 'https://www.typescriptlang.org/',
+		// 	url: 'https://developer.mozilla.org/en-US/',
 		// },
 	]
 	const fromDir = (startPath, filter, callback) => {
