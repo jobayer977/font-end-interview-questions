@@ -17,13 +17,17 @@
 - [11 How DOM is rendered?](#how-dom-is-rendered)
 - [12 What does server side mean?](#what-does-server-side-mean)
 - [13 Where is DOM stored?](#where-is-dom-stored)
-- [14 What does headless mean in software?](#what-does-headless-mean-in-software)
-- [15 How do I use headless browser?](#how-do-i-use-headless-browser)
-- [16 What is WebView used for?](#what-is-webview-used-for)
-- [17 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
-- [18 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
-- [19 What is a network protocol?](#what-is-a-network-protocol)
-- [20 What does a CMS actually do?](#what-does-a-cms-actually-do)
+- [14 Difference between MVC and MVVM?](#difference-between-mvc-and-mvvm)
+- [15 What is the advantage of functional programming?](#what-is-the-advantage-of-functional-programming)
+- [16 Which is better XML or JSON?](#which-is-better-xml-or-json)
+- [17 What is RESTful API?](#what-is-restful-api)
+- [18 What does headless mean in software?](#what-does-headless-mean-in-software)
+- [19 How do I use headless browser?](#how-do-i-use-headless-browser)
+- [20 What is WebView used for?](#what-is-webview-used-for)
+- [21 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
+- [22 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
+- [23 What is a network protocol?](#what-is-a-network-protocol)
+- [24 What does a CMS actually do?](#what-does-a-cms-actually-do)
 <br/><br/><br/><br/>
 
 1. ### What does client-side mean?
@@ -121,13 +125,92 @@ When a web page is loaded, the browser first reads the HTML text and constructs 
 
 13. ### Where is DOM stored?
 
-DOM (Document Object Model) is a Tree representation of the page, starting from the <html> tag, going down into every child, which are called nodes. It's kept in the browser memory, and directly linked to what you see in a page.
+DOM (Document Object Model) is a Tree representation of the page, starting from the `<html>` tag, going down into every child, which are called nodes. It's kept in the browser memory, and directly linked to what you see in a page.
 
-14. ### What does headless mean in software?
+14. ### Difference between MVC and MVVM?
+
+Difference between MVC and MVVM
+
+| MVC                                                 | MVVM                                                 |
+| --------------------------------------------------- | ---------------------------------------------------- |
+| ViewModel encapsulates presentation login and state | The controller is responsible for the business logic |
+| ViewModel is optional Pattern                       | Controller is a must                                 |
+| User hits the view first                            | User hits the controller first                       |
+
+15. ### What is the advantage of functional programming?
+
+Functional programming (FP) is a type of paradigm or pattern in computer science. Everything is done with the help of functions in FP and the basic building blocks are functions only.
+
+- It reduces complex problems into simple pieces.
+- It helps us to debug the code quickly.
+- It helps us to solve problems by breaking down the problem into smaller and smaller pieces effectively in simpler way.
+- It improves modularity and reusability of the code.
+- Some programming languages support nested functions which improve maintainability of the code.
+
+**Example:**
+
+```javascript
+function add(a, b) {
+	return a + b
+}
+
+function multiply(a, b) {
+	return a * b
+}
+
+function subtract(a, b) {
+	return a - b
+}
+```
+
+16. ### Which is better XML or JSON?
+
+_JSON is best for simple applications,_ developed to satisfy simple requirements surrounding data interchange. XML is best for applications with complex requirements surrounding data interchange, such as in enterprise.
+
+Differences between JSON and XML:
+| JSON | XML |
+| ---- | ---- |
+| JSON doesn't use end tags | XML uses end tags |
+| JSON can use arrays syntax | Normally XML can't have arrays syntax |
+| JSON parse is easier | XML parse is much more difficult |
+
+**Example of JSON:**
+
+```javascript
+{
+    "name": "John",
+    "age": 30,
+    "cars": [
+        "Ford",
+        "BMW",
+        "Fiat"
+    ]
+}
+```
+
+**Example of XML:**
+
+```xml
+<person>
+    <name>John</name>
+    <age>30</age>
+    <cars>
+        <car>Ford</car>
+        <car>BMW</car>
+        <car>Fiat</car>
+    </cars>
+</person>
+```
+
+17. ### What is RESTful API?
+
+A REST API is an application programming interface (API) that provides the ability to read and write data from a server that conforms to the constraints of REST architectural style and allows the client to interact with the server in a uniform way.
+
+18. ### What does headless mean in software?
 
 Headless software (e.g. "headless browser" or "headless Linux",) is software capable of working on a device without a graphical user interface. Such software receives inputs and provides output through other interfaces like network or serial port and is common on servers and embedded devices.
 
-15. ### How do I use headless browser?
+19. ### How do I use headless browser?
 
 Headless browsers are a web browser without a graphical user interface that can be controlled from a command line interface programmatically for the purpose of web page automation (e.g., functional testing, scraping, unit testing, etc.). Think of headless browsers as a browser that you can run programmatically from the command line that can retrieve and traverse web page code.
 
@@ -136,23 +219,23 @@ The most common headless browsers are:
 - Headless Chromium
 - Puppeteer
 
-16. ### What is WebView used for?
+20. ### What is WebView used for?
 
 Webviews are used by a native OS, in a native application, to run web pages. Think of a webview like an iframe or a single tab from a web browser that is embedded in a native application running on a device (e.g., iOS, android, windows).
 
-17. ### What is the difference HTTP and https?
+21. ### What is the difference HTTP and https?
 
 HTTPS is HTTP with encryption and verification. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP.
 
-18. ### What is TLS (Transport Layer Security)?
+22. ### What is TLS (Transport Layer Security)?
 
 TLS is a cryptographic protocol that provides end-to-end security of data sent between applications over the Internet. It is mostly familiar to users through its use in secure web browsing.
 
-19. ### What is a network protocol?
+23. ### What is a network protocol?
 
 A network protocol is an established set of rules that determine how data is transmitted between different devices in the same network.
 
-20. ### What does a CMS actually do?
+24. ### What does a CMS actually do?
 
 A CMS, short for content management system, is a software application that allows users to build and manage a website without having to code it from scratch, or know how to code at all. With a CMS, you can create, manage, modify, and publish content in a user-friendly interface.
 
