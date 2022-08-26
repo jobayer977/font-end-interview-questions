@@ -21,13 +21,19 @@
 - [15 What is the advantage of functional programming?](#what-is-the-advantage-of-functional-programming)
 - [16 Which is better XML or JSON?](#which-is-better-xml-or-json)
 - [17 What is RESTful API?](#what-is-restful-api)
-- [18 What does headless mean in software?](#what-does-headless-mean-in-software)
-- [19 How do I use headless browser?](#how-do-i-use-headless-browser)
-- [20 What is WebView used for?](#what-is-webview-used-for)
-- [21 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
-- [22 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
-- [23 What is a network protocol?](#what-is-a-network-protocol)
-- [24 What does a CMS actually do?](#what-does-a-cms-actually-do)
+- [18 What is meant by test coverage?](#what-is-meant-by-test-coverage)
+- [19 What is integration testing?](#what-is-integration-testing)
+- [20 What does a templating engine do?](#what-does-a-templating-engine-do)
+- [21 What means single-page application?](#what-means-single-page-application)
+- [22 What is DNS used for?](#what-is-dns-used-for)
+- [23 What does headless mean in software?](#what-does-headless-mean-in-software)
+- [24 Why do CORS occur?](#why-do-cors-occur)
+- [25 How do I use headless browser?](#how-do-i-use-headless-browser)
+- [26 What is WebView used for?](#what-is-webview-used-for)
+- [27 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
+- [28 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
+- [29 What is a network protocol?](#what-is-a-network-protocol)
+- [30 What does a CMS actually do?](#what-does-a-cms-actually-do)
 <br/><br/><br/><br/>
 
 1. ### What does client-side mean?
@@ -206,11 +212,48 @@ Differences between JSON and XML:
 
 A REST API is an application programming interface (API) that provides the ability to read and write data from a server that conforms to the constraints of REST architectural style and allows the client to interact with the server in a uniform way.
 
-18. ### What does headless mean in software?
+18. ### What is meant by test coverage?
+
+Test coverage is defined as a technique which determines whether our test cases are actually covering the application code and how much code is exercised when we run those test cases. If there are 10 requirements and 100 tests created and if 90 tests are executed then test coverage is 90%
+
+19. ### What is integration testing?
+
+A testing team interacts with an app and its units via the user interface – by clicking on buttons and links, scrolling, swiping, etc. They don't need to know how code works or consider the backend part of the components. They can focus on the user interface and the interaction with the app to test the app and its functionality.
+
+20. ### What does a templating engine do?
+
+A template engine enables you to use static template files in your application. At runtime, the template engine replaces variables in a template file with actual values, and transforms the template into an HTML file sent to the client. This approach makes it easier to design an HTML page.
+
+Most popular template engines are:
+
+- [Mustache](https://mustache.github.io/)
+- [Handlebars](https://handlebarsjs.com/)
+- [Twig](https://twig.sensiolabs.org/)
+- [Nunjucks](https://nunjucks.org/)
+- [Jinja](https://jinja.pocoo.org/)
+- [EJS](https://www.embeddedjs.com/)
+- [Dust](https://dustjs.com/)
+- [Liquid](https://www.liquidengine.com/)
+- [JSP](https://www.jsp.org/)
+- [pug](https://pugjs.org/)
+
+21. ### What means single-page application?
+
+A single-page application is an app that doesn't need to reload the page during its use and works within a browser. Think of the apps you use daily: Facebook, Maps, Gmail, Twitter, Google Drive, or even GitHub. All these are examples of a SPA
+
+22. ### What is DNS used for?
+
+DNS, or the Domain name system, translates a domain name into an IP address. for example, www.google.com is translated into an IP address of 0000.0000.0000.0001 this kind of IP address.
+
+23. ### What does headless mean in software?
 
 Headless software (e.g. "headless browser" or "headless Linux",) is software capable of working on a device without a graphical user interface. Such software receives inputs and provides output through other interfaces like network or serial port and is common on servers and embedded devices.
 
-19. ### How do I use headless browser?
+24. ### Why do CORS occur?
+
+Browser has an same-origin policy rule that prohibits cross-origin requests. This is because the browser's security model which allows to request resources from same origin only. When a browser requests a resource from a different origin, it has to send a CORS request to the server.
+
+25. ### How do I use headless browser?
 
 Headless browsers are a web browser without a graphical user interface that can be controlled from a command line interface programmatically for the purpose of web page automation (e.g., functional testing, scraping, unit testing, etc.). Think of headless browsers as a browser that you can run programmatically from the command line that can retrieve and traverse web page code.
 
@@ -219,23 +262,23 @@ The most common headless browsers are:
 - Headless Chromium
 - Puppeteer
 
-20. ### What is WebView used for?
+26. ### What is WebView used for?
 
 Webviews are used by a native OS, in a native application, to run web pages. Think of a webview like an iframe or a single tab from a web browser that is embedded in a native application running on a device (e.g., iOS, android, windows).
 
-21. ### What is the difference HTTP and https?
+27. ### What is the difference HTTP and https?
 
 HTTPS is HTTP with encryption and verification. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP.
 
-22. ### What is TLS (Transport Layer Security)?
+28. ### What is TLS (Transport Layer Security)?
 
 TLS is a cryptographic protocol that provides end-to-end security of data sent between applications over the Internet. It is mostly familiar to users through its use in secure web browsing.
 
-23. ### What is a network protocol?
+29. ### What is a network protocol?
 
 A network protocol is an established set of rules that determine how data is transmitted between different devices in the same network.
 
-24. ### What does a CMS actually do?
+30. ### What does a CMS actually do?
 
 A CMS, short for content management system, is a software application that allows users to build and manage a website without having to code it from scratch, or know how to code at all. With a CMS, you can create, manage, modify, and publish content in a user-friendly interface.
 
