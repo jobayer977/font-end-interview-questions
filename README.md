@@ -28,12 +28,22 @@
 - [22 What is DNS used for?](#what-is-dns-used-for)
 - [23 What does headless mean in software?](#what-does-headless-mean-in-software)
 - [24 Why do CORS occur?](#why-do-cors-occur)
-- [25 How do I use headless browser?](#how-do-i-use-headless-browser)
-- [26 What is WebView used for?](#what-is-webview-used-for)
-- [27 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
-- [28 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
-- [29 What is a network protocol?](#what-is-a-network-protocol)
-- [30 What does a CMS actually do?](#what-does-a-cms-actually-do)
+- [25 Who benefits from accessibility?](#who-benefits-from-accessibility)
+- [26 What is a web browser API?](#what-is-a-web-browser-api)
+- [27 What is a static site generator?](#what-is-a-static-site-generator)
+- [28 What is a static website?](#what-is-a-static-website)
+- [29 What are the pros and cons of using a static site generator?](#what-are-the-pros-and-cons-of-using-a-static-site-generator)
+- [30 What is Jamstack used for?](#what-is-jamstack-used-for)
+- [31 What is Markdown?](#what-is-markdown)
+- [32 What is a CDN?](#what-is-a-cdn)
+- [33 What are the benefits of using a CDN?](#what-are-the-benefits-of-using-a-cdn)
+- [34 How do I use headless browser?](#how-do-i-use-headless-browser)
+- [35 How does a CDN work?](#how-does-a-cdn-work)
+- [36 What is WebView used for?](#what-is-webview-used-for)
+- [37 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
+- [38 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
+- [39 What is a network protocol?](#what-is-a-network-protocol)
+- [40 What does a CMS actually do?](#what-does-a-cms-actually-do)
 <br/><br/><br/><br/>
 
 1. ### What does client-side mean?
@@ -253,7 +263,62 @@ Headless software (e.g. "headless browser" or "headless Linux",) is software cap
 
 Browser has an same-origin policy rule that prohibits cross-origin requests. This is because the browser's security model which allows to request resources from same origin only. When a browser requests a resource from a different origin, it has to send a CORS request to the server.
 
-25. ### How do I use headless browser?
+25. ### Who benefits from accessibility?
+
+The most obvious benefit of web accessibility is that it helps people with disabilities enjoy your website’s content, products, and services. However, the advantages of web accessibility aren’t limited to their immediate impact for people with disabilities — they also benefit Improving SEO, user experience, increasing usability, and more.
+
+26. ### What is a web browser API?
+
+Web API is provided by the browser to allow developers to interact with the browser and its features. For example, the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) allows you to access the user's location, and the [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) allows you to draw graphics and animations.
+
+27. ### What is a static site generator?
+
+A static site generator is a tool that generates a full static HTML website based on raw data and a set of templates. Essentially, a static site generator automates the task of coding individual HTML pages and gets those pages ready to serve to users ahead of time. Because these HTML pages are pre-built, they can load very quickly in users' browsers.
+
+28. ### What is a static website?
+
+A static website is made up of one or more HTML webpages that load the same way every time. Static websites contrast with dynamic websites, which load differently based on any number of changing data inputs, such as the user's location, the time of day, or user actions. While static webpages are simple HTML files that can load quickly, dynamic webpages require the execution of JavaScript code within the browser in order to render.
+
+29. ### What are the pros and cons of using a static site generator?
+
+### **Pros**
+
+- **Performance:** Because static site generators create webpages in advance instead of on demand (as with a CMS), webpages load slightly faster in users' browsers.
+
+- **Customization:** Developers can create any template they want. They are not limited by the fields provided by a CMS, nor by a CMS's built-in templates.
+
+- **Lighter backend:** Static websites are lightweight and do not require as much code to run on the server side, whereas CMS-based websites constantly query the server side for content.
+
+### **Cons**
+
+- **Few or no pre-built templates:** The downside of unlimited customization is that it can take longer to get started. Many static site generators do not come with templates, and developers will have to spend a lot of time building them from scratch at first.
+-
+- **No user-friendly interface:** It is harder for non-developer users to publish content using a static site generator. There is no CMS interface, and working with raw unformatted data may be intimidating for users. In addition, developer support is often necessary for making website updates.
+
+30. ### What is Jamstack used for?
+
+JAMstack is an approach to frontend web development (the construction of content and interfaces that users interact with). It allows developers to quickly create and efficiently serve static websites to users.
+
+In a JAMstack web application, as much HTML as possible is pre-built and stored in a content delivery network (CDN). Instead of running a monolithic backend application on the server side to generate dynamic content, dynamic components of the application are based on APIs. Ideally, this results in a much faster user experience and a much simpler developer experience.
+
+31. ### What is Markdown?
+
+Markdown is a widely used, simple markup language for formatting text. Many developers today prefer using Markdown to traditional HTML when coding content, and many static site generators support Markdown.
+
+32. ### What is a CDN?
+
+A content delivery network (CDN) refers to a geographically distributed group of servers which work together to provide fast delivery of Internet content. A CDN allows for the quick transfer of assets needed for loading Internet content including HTML pages, javascript files, stylesheets, images, and videos.
+
+33. ### What are the benefits of using a CDN?
+
+- **Improving website load times**
+  CDN can improve website load times by caching content and serving it from the closest server to the user. This reduces the time it takes to load a website and improves the user experience.
+- **Reduce bandwidth costs**
+  Through caching and other optimizations, CDNs are able to reduce the amount of data an origin server must provide, thus reducing hosting costs for website.
+- **Improving website security**
+  CDNs can provide additional security by blocking malicious traffic and preventing DDoS attacks.
+
+34. ### How do I use headless browser?
 
 Headless browsers are a web browser without a graphical user interface that can be controlled from a command line interface programmatically for the purpose of web page automation (e.g., functional testing, scraping, unit testing, etc.). Think of headless browsers as a browser that you can run programmatically from the command line that can retrieve and traverse web page code.
 
@@ -262,23 +327,29 @@ The most common headless browsers are:
 - Headless Chromium
 - Puppeteer
 
-26. ### What is WebView used for?
+35. ### How does a CDN work?
+
+At its core, a CDN is a network of servers linked together with the goal of delivering content as quickly, cheaply, reliably, and securely as possible. In order to improve speed and connectivity, a CDN will place servers at the exchange points between different networks.
+
+A CDN is a network of servers that distributes content from an “origin” server throughout the world by caching content close to where each end user is accessing the internet via a web-enabled device. The content they request is first stored on the origin server and is then replicated and stored elsewhere as needed.
+
+36. ### What is WebView used for?
 
 Webviews are used by a native OS, in a native application, to run web pages. Think of a webview like an iframe or a single tab from a web browser that is embedded in a native application running on a device (e.g., iOS, android, windows).
 
-27. ### What is the difference HTTP and https?
+37. ### What is the difference HTTP and https?
 
 HTTPS is HTTP with encryption and verification. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP.
 
-28. ### What is TLS (Transport Layer Security)?
+38. ### What is TLS (Transport Layer Security)?
 
 TLS is a cryptographic protocol that provides end-to-end security of data sent between applications over the Internet. It is mostly familiar to users through its use in secure web browsing.
 
-29. ### What is a network protocol?
+39. ### What is a network protocol?
 
 A network protocol is an established set of rules that determine how data is transmitted between different devices in the same network.
 
-30. ### What does a CMS actually do?
+40. ### What does a CMS actually do?
 
 A CMS, short for content management system, is a software application that allows users to build and manage a website without having to code it from scratch, or know how to code at all. With a CMS, you can create, manage, modify, and publish content in a user-friendly interface.
 
