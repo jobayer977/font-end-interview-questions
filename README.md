@@ -39,11 +39,17 @@
 - [33 What are the benefits of using a CDN?](#what-are-the-benefits-of-using-a-cdn)
 - [34 How do I use headless browser?](#how-do-i-use-headless-browser)
 - [35 How does a CDN work?](#how-does-a-cdn-work)
-- [36 What is WebView used for?](#what-is-webview-used-for)
-- [37 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
-- [38 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
-- [39 What is a network protocol?](#what-is-a-network-protocol)
-- [40 What does a CMS actually do?](#what-does-a-cms-actually-do)
+- [36 What is difference between package json and package lock json?](#what-is-difference-between-package-json-and-package-lock-json)
+- [37 Why Progressive Web Apps?](#why-progressive-web-apps)
+- [38 How progressive web app works?](#how-progressive-web-app-works)
+- [39 What is manifest JSON in web?](#what-is-manifest-json-in-web)
+- [40 What is nodejs?](#what-is-nodejs)
+- [41 What is nodejs used for?](#what-is-nodejs-used-for)
+- [42 What is WebView used for?](#what-is-webview-used-for)
+- [43 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
+- [44 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
+- [45 What is a network protocol?](#what-is-a-network-protocol)
+- [46 What does a CMS actually do?](#what-does-a-cms-actually-do)
 <br/><br/><br/><br/>
 
 1. ### What does client-side mean?
@@ -333,23 +339,70 @@ At its core, a CDN is a network of servers linked together with the goal of deli
 
 A CDN is a network of servers that distributes content from an “origin” server throughout the world by caching content close to where each end user is accessing the internet via a web-enabled device. The content they request is first stored on the origin server and is then replicated and stored elsewhere as needed.
 
-36. ### What is WebView used for?
+36. ### What is difference between package json and package lock json?
+
+In NodejS we have two files package.json and package-lock.json. Both files are used to manage dependencies of a project. But there is a difference between them.
+
+**Difference in Tabular Form**
+| package.json | package-lock.json |
+| :-------------------------------------------------------- | :------------------------------------------------------------- |
+| It contains basic information about the project. | It describes the exact tree that was generated to allow subsequent installs to have the identical tree. |
+| It is mandatory for every project. | It is automatically generated for those operations where npm modifies either node_modules tree or package.json. |
+| It records important metadata about the project. | It allows future devs to install the same dependencies in the project.
+| It contains information such as name, description, author, script, and dependencies. | It contains the name, dependencies, and locked version of the project.
+
+37. ### Why Progressive Web Apps?
+
+Progressive Apps allow users to install app without going to app store. User will be able getting app experience immediately. Progressive app are now supported by all major browsers.
+
+38. ### How progressive web app works?
+
+The progressive web app works with native web technologies. It works with service workers, and app manifest. Service workers are used to caching the app and making it available offline. App manifest is used to provide information about the app.
+
+39. ### What is manifest JSON in web?
+
+The web app manifest is a JSON file that tells the browser about your Progressive Web App and how it should behave when installed on the user's desktop or mobile device.
+
+**Example**
+
+```json
+{
+	"name": "Weather",
+	"short_name": "Weather",
+	"start_url": "/?source=pwa",
+	"display": "standalone",
+	"theme_color": "#2f3ba2",
+	"background_color": "#2f3ba2"
+}
+```
+
+Here we have a manifest file for a weather app. It has a name, a short name, a start URL, a display mode, a theme color, and a background color. now it's can getting appearance depending on the manifest file.
+
+40. ### What is nodejs?
+
+Node.js is an open-source, cross-platform, back-end, JavaScript runtime program that executes JavaScript codes outside of a web browser.
+
+41. ### What is nodejs used for?
+
+Node.js is most often used to easily build and scale network applications. Node.js creates models that are lightweight and efficient which are ideal for data-intensive and real-time applications.
+
+42. ### What is WebView used for?
 
 Webviews are used by a native OS, in a native application, to run web pages. Think of a webview like an iframe or a single tab from a web browser that is embedded in a native application running on a device (e.g., iOS, android, windows).
 
-37. ### What is the difference HTTP and https?
+43. ### What is the difference HTTP and https?
 
 HTTPS is HTTP with encryption and verification. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP.
 
-38. ### What is TLS (Transport Layer Security)?
+44. ### What is TLS (Transport Layer Security)?
 
 TLS is a cryptographic protocol that provides end-to-end security of data sent between applications over the Internet. It is mostly familiar to users through its use in secure web browsing.
 
-39. ### What is a network protocol?
+45. ### What is a network protocol?
 
 A network protocol is an established set of rules that determine how data is transmitted between different devices in the same network.
 
-40. ### What does a CMS actually do?
+46. ### What does a CMS actually do?
 
 A CMS, short for content management system, is a software application that allows users to build and manage a website without having to code it from scratch, or know how to code at all. With a CMS, you can create, manage, modify, and publish content in a user-friendly interface.
 
