@@ -45,11 +45,23 @@
 - [39 What is manifest JSON in web?](#what-is-manifest-json-in-web)
 - [40 What is nodejs?](#what-is-nodejs)
 - [41 What is nodejs used for?](#what-is-nodejs-used-for)
-- [42 What is WebView used for?](#what-is-webview-used-for)
-- [43 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
-- [44 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
-- [45 What is a network protocol?](#what-is-a-network-protocol)
-- [46 What does a CMS actually do?](#what-does-a-cms-actually-do)
+- [42 What DO module bundlers do?](#what-do-module-bundlers-do)
+- [43 What is a package?](#what-is-a-package)
+- [44 What is gulp used for?](#what-is-gulp-used-for)
+- [45 What is WebView used for?](#what-is-webview-used-for)
+- [46 What is the benefit of software testing?](#what-is-the-benefit-of-software-testing)
+- [47 How does DNS work?](#how-does-dns-work)
+- [48 What is serverless](#what-is-serverless)
+- [49 What is edge computing?](#what-is-edge-computing)
+- [50 What is SSL?](#what-is-ssl)
+- [51 How does streaming work?](#how-does-streaming-work)
+- [52 What is HTTP live streaming (HLS)?](#what-is-http-live-streaming-hls)
+- [53 What is web vitals ?](#what-is-web-vitals)
+- [54 What are the 3 Core Web Vitals?](#what-are-the-3-core-web-vitals)
+- [55 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
+- [56 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
+- [57 What is a network protocol?](#what-is-a-network-protocol)
+- [58 What does a CMS actually do?](#what-does-a-cms-actually-do)
 <br/><br/><br/><br/>
 
 1. ### What does client-side mean?
@@ -386,23 +398,85 @@ Node.js is an open-source, cross-platform, back-end, JavaScript runtime program 
 
 Node.js is most often used to easily build and scale network applications. Node.js creates models that are lightweight and efficient which are ideal for data-intensive and real-time applications.
 
-42. ### What is WebView used for?
+42. ### What DO module bundlers do?
+
+Module bundlers are the way to organize and combine many files of JavaScript code into one file. A JavaScript bundler can be used when your project becomes too large for a single file or when you're working with libraries that have multiple dependencies.
+
+43. ### What is a package?
+
+A package is a reusable piece of software which can be downloaded from a global registry into a developer’s local environment. Each package may or may not depend on other packages.
+
+44. ### What is gulp used for?
+
+Gulp is a tool that helps us out with several tasks when it comes to web development. It's often used to do front end tasks like: Spinning up a web server. Reloading the browser automatically whenever a file is saved.
+
+45. ### What is WebView used for?
 
 Webviews are used by a native OS, in a native application, to run web pages. Think of a webview like an iframe or a single tab from a web browser that is embedded in a native application running on a device (e.g., iOS, android, windows).
 
-43. ### What is the difference HTTP and https?
+46. ### What is the benefit of software testing?
+
+A properly tested software product ensures dependability, security, and high performance, which leads to time savings, cost effectiveness, and customer satisfaction. It happens to be an integral part of the process.
+
+47. ### How does DNS work?
+
+The process of DNS resolution is a bit like a phone book. When you want to call someone, you look up their number in the phone book. When you want to visit a website, you look up its IP address in the DNS.
+
+DNS resolution involves converting a hostname (such as www.example.com) into a computer-friendly IP address (such as 192.168.1.1). An IP address is given to each device on the Internet, and that address is necessary to find the appropriate Internet device.
+
+48. ### What is serverless
+
+Server-less does not mean that there is no server. It means that the developer does not have to worry about the server. The server is managed by the cloud provider. The developer only needs to focus on the application logic.
+
+Serverless is a cloud computing execution model in which the cloud provider dynamically manages the allocation and provisioning of servers. A serverless platform typically abstracts away the server and infrastructure management, and lets developers deploy code on demand. The serverless platform automatically scales the infrastructure up and down, and bills the developer based on the actual amount of resources consumed.
+
+**Some of the benefits of serverless are:**
+
+- No need to manage servers
+- No need to worry about scaling
+- No need to worry about security
+- No need to worry about availability
+- No need to worry about performance
+- No need to worry about cost
+- No need to worry about monitoring
+
+49. ### What is edge computing?
+
+Edge computing is a networking philosophy focused on bringing computing as close to the source of data as possible in order to reduce latency and bandwidth use
+
+50. ### What is SSL?
+
+SSL, or Secure Sockets Layer, is an encryption-based Internet security protocol. It is used to secure communications between a client and a server. SSL is used to protect sensitive information such as credit card numbers, social security numbers, and login credentials. It is also used to authenticate websites and ensure that the data being sent is not being intercepted by a third party.
+
+51. ### How does streaming work?
+
+Just like other data that's sent over the Internet, audio and video data is broken down into data packets. Each packet contains a small piece of the file, and an audio or video player in the browser on the client device takes the flow of data packets and interprets them as video or audio.
+
+52. ### What is HTTP live streaming (HLS)?
+
+HTTP live streaming (HLS) is one of the most widely used video streaming protocols. Although it is called HTTP "live" streaming, it is used for both on-demand streaming and live streaming. HLS breaks down video files into smaller downloadable HTTP files and delivers them using the HTTP protocol. Client devices load these HTTP files and then play them back as video.
+
+53. ### What is web vitals ?
+
+It's an way to measure and report the site performance. With this Help we can easily understand the performance of the site and can improve it. In browser we can see the performance of the site by using the developer tools.
+
+54. ### What are the 3 Core Web Vitals?
+
+To provide a good user experience. There are 3 stage we need to focus on. Loading, Interactivity and Visual Stability. In Core Web Vitals that are called as LCP, FID and CLS.
+
+55. ### What is the difference HTTP and https?
 
 HTTPS is HTTP with encryption and verification. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP.
 
-44. ### What is TLS (Transport Layer Security)?
+56. ### What is TLS (Transport Layer Security)?
 
 TLS is a cryptographic protocol that provides end-to-end security of data sent between applications over the Internet. It is mostly familiar to users through its use in secure web browsing.
 
-45. ### What is a network protocol?
+57. ### What is a network protocol?
 
 A network protocol is an established set of rules that determine how data is transmitted between different devices in the same network.
 
-46. ### What does a CMS actually do?
+58. ### What does a CMS actually do?
 
 A CMS, short for content management system, is a software application that allows users to build and manage a website without having to code it from scratch, or know how to code at all. With a CMS, you can create, manage, modify, and publish content in a user-friendly interface.
 
