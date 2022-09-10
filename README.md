@@ -58,10 +58,13 @@
 - [52 What is HTTP live streaming (HLS)?](#what-is-http-live-streaming-hls)
 - [53 What is web vitals ?](#what-is-web-vitals)
 - [54 What are the 3 Core Web Vitals?](#what-are-the-3-core-web-vitals)
-- [55 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
-- [56 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
-- [57 What is a network protocol?](#what-is-a-network-protocol)
-- [58 What does a CMS actually do?](#what-does-a-cms-actually-do)
+- [55 What is the CSS box model?](#what-is-the-css-box-model)
+- [56 What is the difference HTTP and https?](#what-is-the-difference-http-and-https)
+- [57 What are the SEO best practices](#what-are-the-seo-best-practices)
+- [58 How can increase code manage maintainability ?](#how-can-increase-code-manage-maintainability)
+- [59 What is TLS (Transport Layer Security)?](#what-is-tls-transport-layer-security)
+- [60 What is a network protocol?](#what-is-a-network-protocol)
+- [61 What does a CMS actually do?](#what-does-a-cms-actually-do)
 <br/><br/><br/><br/>
 
 1. ### What does client-side mean?
@@ -464,19 +467,39 @@ It's an way to measure and report the site performance. With this Help we can ea
 
 To provide a good user experience. There are 3 stage we need to focus on. Loading, Interactivity and Visual Stability. In Core Web Vitals that are called as LCP, FID and CLS.
 
-55. ### What is the difference HTTP and https?
+55. ### What is the CSS box model?
+
+The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+
+56. ### What is the difference HTTP and https?
 
 HTTPS is HTTP with encryption and verification. The only difference between the two protocols is that HTTPS uses TLS (SSL) to encrypt normal HTTP requests and responses, and to digitally sign those requests and responses. As a result, HTTPS is far more secure than HTTP.
 
-56. ### What is TLS (Transport Layer Security)?
+57. ### What are the SEO best practices
+
+1. Use a descriptive title
+2. Optimize meta description
+3. Image optimization and page speed
+4. Build internal and external links structure
+5. Make URL search engine friendly
+
+58. ### How can increase code manage maintainability ?
+
+1. Use human readable and sensible names
+2. Minimize nested and conditional logic
+3. Decouple and isolate code
+4. Remove unused code
+5. Separate configuration from code
+
+59. ### What is TLS (Transport Layer Security)?
 
 TLS is a cryptographic protocol that provides end-to-end security of data sent between applications over the Internet. It is mostly familiar to users through its use in secure web browsing.
 
-57. ### What is a network protocol?
+60. ### What is a network protocol?
 
 A network protocol is an established set of rules that determine how data is transmitted between different devices in the same network.
 
-58. ### What does a CMS actually do?
+61. ### What does a CMS actually do?
 
 A CMS, short for content management system, is a software application that allows users to build and manage a website without having to code it from scratch, or know how to code at all. With a CMS, you can create, manage, modify, and publish content in a user-friendly interface.
 
